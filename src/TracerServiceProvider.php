@@ -23,8 +23,6 @@ class TracerServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        include __DIR__.'/routes.php';
-        $this->app->make('Rokr\Tracer\TracerController');
         $this->app->make('Rokr\Tracer\Tracer');
     }
 }
