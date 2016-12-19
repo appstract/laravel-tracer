@@ -11,10 +11,11 @@ First do the composer install then add the following class to your config/app.ph
 Rokr\Tracer\TracerServiceProvider::class,
 ```
 
-Finally publish the config file
+Publish the config file
 ```sh
 php artisan vendor:publish
 ```
+A tracer.php file will be created in your app/config directory. If your views are located at another directory you can set the correct path here.
 
 ## Basic Usage
 
