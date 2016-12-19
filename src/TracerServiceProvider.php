@@ -13,6 +13,10 @@ class TracerServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        $this->publishes([
+            __DIR__.'/config/tracer.php' => config_path('tracer.php'),
+        ]);
+
         $tracer = (new Tracer)->trace();
     }
 
