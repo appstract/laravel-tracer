@@ -27,7 +27,7 @@ class Tracer
 	 */
 	public function __construct()
 	{
-		$this->files 	= \File::allFiles(base_path().config('tracer.path'));
+		$this->files 	= \File::allFiles(base_path().(config('tracer.path') ? config('tracer.path') : '/resources/views'));
 		$this->realPath = '<div style="border: 1px solid #f4645f"> {{last($this->lastCompiled)}}';
 		$this->debug 	= config('tracer.trace');
 	}
@@ -50,7 +50,7 @@ class Tracer
 	public function addTrace($file)
 	{
 		// If the file does not contain the trace, add it.
-		if( strpos(\File::get($file), $this->realPath) === false && env('APP_DEBUG') == true) {
+		if( strpos(\File::get($file), $this->realPath) === false && $this->debug == true) {
 			\File::prepend($file, $this->realPath);
 			\File::append($file, '</div>');
 		}
