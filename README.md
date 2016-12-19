@@ -15,7 +15,7 @@ Publish the config file
 ```sh
 php artisan vendor:publish
 ```
-A tracer.php file will be created in your app/config directory. If your views are located at another directory you can set the correct path here.
+A tracer.php file will be created in your app/config directory. To disable Tracer set trace to false. If your views are located at another directory you can set the correct path here.
 
 ## Basic Usage
 
