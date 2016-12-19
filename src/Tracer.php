@@ -27,9 +27,9 @@ class Tracer
 	 */
 	public function __construct()
 	{
-		$this->files 	= \File::allFiles(base_path().'/resources/views');
+		$this->files 	= \File::allFiles(base_path().config('tracer.path'));
 		$this->realPath = '<div style="border: 1px solid yellowgreen"> {{last($this->lastCompiled)}}';
-		$this->debug 	= env('APP_DEBUG');
+		$this->debug 	= config('tracer.trace');
 	}
 
 	/**
