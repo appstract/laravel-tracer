@@ -15,6 +15,5 @@
         "psr-4": {
             "Rokr\\Tracer\\": "src/"
         }
-    },
-    "minimum-stability": "dev",
+    }
 }
