@@ -6,7 +6,7 @@ Tracer shows the paths of all the blade files that are loaded into your template
 ## Installation
 
 ```sh
-composer require rokr/tracer
+composer require rokr/tracer --dev
 ```
 
 First do the composer install then add the following class to your config/app.php service providers list.
