@@ -30,7 +30,7 @@ Add the script to your HTML head section.
 
 In app/config tracer.php file, if trace is set to true you see the paths of all the blade files that are loaded into your templates. To remove the paths simply set trace to false. If your views are located at another directory you can set the correct path here.
 
-## Toggle tracer shortcut
+## Toggle traces
 
-Use the keybord combination ```ctrl+z ``` inside the browser to toggle the traces in your app.
+Use the keybord shortcut ```ctrl+z ``` inside the browser to toggle the traces in your app.
 
