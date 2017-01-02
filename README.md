@@ -32,5 +32,5 @@ In app/config tracer.php file, if trace is set to true you see the paths of all 
 
 ## Toggle tracer shortcut
 
-Use the keybord combination ```sh ctrl+z ``` inside the browser to toggle the traces in your app.
+Use the keybord combination ```ctrl+z ``` inside the browser to toggle the traces in your app.
 
