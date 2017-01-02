@@ -14,11 +14,17 @@ First do the composer install then add the following class to your config/app.ph
 Rokr\Tracer\TracerServiceProvider::class,
 ```
 
-Publish the config file
+Publish the config and tracer.js files
 ```sh
 php artisan vendor:publish
 ```
 A tracer.php file will be created in your app/config directory.
+
+A tracer.js file will be created in your public/js directory.
+Add the script to your HTML head section.
+```sh
+<script type="text/javascript" src="{{ asset('js/tracer.js') }}"></script>
+```
 
 ## Basic Usage
 
