@@ -27,9 +27,9 @@ class Tracer
 	 */
 	public function __construct()
 	{
-		$this->files 	= \File::allFiles(base_path().(config('tracer.path') ? config('tracer.path') : '/resources/views'));
+		$this->files 	= \File::allFiles(base_path().(config('tracer.path') ? config('tracer.path') : '/storage/framework/views'));
 
-		$this->realPath = '<span class="rokr-tracer">{{last($this->lastCompiled)}}</span>';
+		$this->realPath = '<span class="rokr-tracer"><?php echo last($this->lastCompiled) ?></span>';
 		$this->debug 	= config('tracer.trace');
 	}
 
@@ -52,15 +52,7 @@ class Tracer
 	{
 		// If the file does not contain the trace, add it.
 		if( strpos(\File::get($file), $this->realPath) === false && $this->debug == true) {
-			if (preg_match("/<body[^>]*>(.*?)<\/body>/is", \File::get($file), $matches)) {
-
-				$content = $this->realPath . $matches[1];
-				$content = str_replace($matches[1], $content, \File::get($file));
-				\File::put($file, $content);
-
-			}else{
-				\File::prepend($file, $this->realPath);
-			}
+			\File::prepend($file, $this->realPath);
 		}
 	}
 
