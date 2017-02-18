@@ -20,17 +20,15 @@ php artisan vendor:publish
 ```
 A tracer.php file will be created in your app/config directory.
 
-A tracer.js file will be created in your public/js directory.
-Add the script to your HTML head section.
-```sh
-<script type="text/javascript" src="{{ asset('js/tracer.js') }}"></script>
-```
 
 ## Basic Usage
 
 In app/config tracer.php file, if trace is set to true you see the paths of all the blade files that are loaded into your templates. To remove the paths simply set trace to false. If your views are located at another directory you can set the correct path here.
 
+
 ## Toggle traces
 
-Use the keybord shortcut ```ctrl+z ``` inside the browser to toggle the traces in your app.
+A tracer.js file will be created in your public/js directory. This gets injected at the end of your app ```<head> ``` section.
+
+Use the keybord shortcut ```ctrl+z ``` inside your app to toggle the traces.
 
