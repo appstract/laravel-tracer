@@ -35,7 +35,7 @@ Use the keybord shortcut ```ctrl+z ``` inside your app to toggle the traces.
 
 ## Contributing
 
-Please see (/CONTRIBUTING.md) for details.
+Please see [CONTRIBUTING](/CONTRIBUTING.md) for details.
 
 
 ## About Appstract
