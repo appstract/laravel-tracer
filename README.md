@@ -45,10 +45,9 @@ Appstract is a small team from The Netherlands. <3 Laravel, Vue and other awesom
 
 ## Buy Us a Beer
 
-Would be awesome if you would buy us a beer! :)
+Would be awesome if you would [buy us a beer](https://paypal.me/:name)! :)
 
 
 ## License
 
-The MIT License (MIT). Please see License File for more information.
-
+The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
