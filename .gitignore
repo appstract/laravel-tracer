@@ -1,0 +1,6 @@
+*.sublime-*
+build
+composer.lock
+docs
+vendor
+.DS_Store
