@@ -14,8 +14,10 @@ class AssetsMiddleware
     	$content = $response->content();
 
     	$content = str_replace(
-    		'</head>', 
-    		'<script type="text/javascript" src="/js/tracer.js"></script></head>', 
+    		'</head>',
+    		'<link href="/css/tracer.css" rel="stylesheet">
+             <script type="text/javascript" src="/js/tracer.js"></script>
+             </head>', 
     		$content
     	);
 

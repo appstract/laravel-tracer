@@ -17,6 +17,7 @@ class TracerServiceProvider extends ServiceProvider
 
         $this->publishes([
             __DIR__.'/config/tracer.php' => config_path('tracer.php'),
+            __DIR__.'/assets/css/tracer.css' => public_path('css/tracer.css'),
             __DIR__.'/assets/js/tracer.js' => public_path('js/tracer.js')
         ]);
 

@@ -1,0 +1,7 @@
+.rokr-tracer{
+	position: absolute;
+	z-index: 999999;
+	width: 100%;
+	text-align: center;
+	border-bottom: 1px solid red;
+}
