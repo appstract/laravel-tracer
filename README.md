@@ -32,3 +32,23 @@ A tracer.js file will be created in your public/js directory. This gets injected
 
 Use the keybord shortcut ```ctrl+z ``` inside your app to toggle the traces.
 
+
+## Contributing
+
+Please see (CONTRIBUTING.md) for details.
+
+
+## About Appstract
+
+Appstract is a small team from The Netherlands. <3 Laravel, Vue and other awesome tools.
+
+
+## Buy Us a Beer
+
+Would be awesome if you would buy us a beer! :)
+
+
+## License
+
+The MIT License (MIT). Please see License File for more information.
+
