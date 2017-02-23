@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
 		for(var i = 0; i < traces.length; i++){
 
 			if (traces[i].style.display === 'none') {
-				traces[i].style.display = 'inline';
+				traces[i].style.display = 'block';
 			}else{
 				traces[i].style.display = 'none';
 			}
