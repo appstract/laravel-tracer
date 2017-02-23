@@ -11,7 +11,7 @@ composer require rokr/tracer --dev
 
 First do the composer install then add the following class to your config/app.php service providers list.
 ```sh
-Rokr\Tracer\TracerServiceProvider::class,
+Appstract\Tracer\TracerServiceProvider::class,
 ```
 
 Publish the config and tracer.js files
