@@ -1,6 +1,6 @@
 <?php
 
-namespace Rokr\Tracer;
+namespace Appstract\Tracer;
 
 class Tracer
 {
@@ -29,7 +29,7 @@ class Tracer
 	{
 		$this->files 	= \File::allFiles(base_path().(config('tracer.path') ? config('tracer.path') : '/storage/framework/views'));
 
-		$this->realPath = '<span class="rokr-tracer"><?php echo last($this->lastCompiled) ?></span>';
+		$this->realPath = '<span class="laravel-trace"><?php echo last($this->lastCompiled) ?></span>';
 		$this->debug 	= config('tracer.trace');
 	}
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Rokr\Tracer;
+namespace Appstract\Tracer;
 
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
@@ -17,15 +17,15 @@ class TracerServiceProvider extends ServiceProvider
 
         $this->publishes([
             __DIR__.'/config/tracer.php' => config_path('tracer.php'),
-            __DIR__.'/assets/css/tracer.css' => public_path('css/tracer.css'),
-            __DIR__.'/assets/js/tracer.js' => public_path('js/tracer.js')
+            __DIR__.'/assets/css/laravel-tracer.css' => public_path('css/laravel-tracer.css'),
+            __DIR__.'/assets/js/laravel-tracer.js' => public_path('js/laravel-tracer.js')
         ]);
 
         $tracer = (new Tracer)->trace();
 
         // Add AssetsMiddlware
         if (config('tracer.trace')) {
-            $kernel->prependMiddleware('Rokr\Tracer\Middleware\AssetsMiddleware');
+            $kernel->prependMiddleware('Appstract\Tracer\Middleware\AssetsMiddleware');
         }
     }
 
@@ -36,6 +36,6 @@ class TracerServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->make('Rokr\Tracer\Tracer');
+        $this->app->make('Appstract\Tracer\Tracer');
     }
 }

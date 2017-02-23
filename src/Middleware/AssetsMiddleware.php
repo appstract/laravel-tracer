@@ -1,6 +1,6 @@
 <?php
 
-namespace Rokr\Tracer\Middleware;
+namespace Appstract\Tracer\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
@@ -15,8 +15,8 @@ class AssetsMiddleware
 
     	$content = str_replace(
     		'</head>',
-    		'<link href="/css/tracer.css" rel="stylesheet">
-             <script type="text/javascript" src="/js/tracer.js"></script>
+    		'<link href="/css/laravel-tracer.css" rel="stylesheet">
+             <script type="text/javascript" src="/js/laravel-tracer.js"></script>
              </head>', 
     		$content
     	);

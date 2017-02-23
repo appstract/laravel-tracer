@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function(e) {
 
 	function toggleTrace() {
-		var traces = document.getElementsByClassName('rokr-tracer');
+		var traces = document.getElementsByClassName('laravel-trace');
 
 		for(var i = 0; i < traces.length; i++){
 

@@ -1,11 +1,14 @@
 {
-    "name": "rokr/tracer",
+    "name": "appstract/laravel-tracer",
     "description": "Adds the paths of all loaded views/partials to your templates.",
-    "keywords": ["laravel", "blade", "path", "hints"],
+    "keywords": ["appstract", "laravel", "blade", "path", "hints", "php"],
     "license": "MIT",
     "authors": [
         {
-            "name": "Bob Krijnen"
+            "name": "Bob Krijnen",
+            "email": "hello@appstract.team",
+            "homepage": "https://appstract.team",
+            "role": "Developer"
         }
     ],
     "require": {
@@ -13,7 +16,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Rokr\\Tracer\\": "src/"
+            "Appstract\\Tracer\\": "src/"
         }
     }
 }
