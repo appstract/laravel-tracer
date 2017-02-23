@@ -26,27 +26,30 @@ A tracer.php file will be created in your app/config directory.
 In app/config tracer.php file, if trace is set to true you see the paths of all the blade files that are loaded into your templates. To remove the paths simply set trace to false. If your views are located at another directory you can set the correct path here.
 
 
-## Toggle traces
+### Toggle traces
 
 A tracer.js file will be created in your public/js directory. This gets injected at the end of your app ```<head> ``` section.
 
 Use the keybord shortcut ```ctrl+z ``` inside your app to toggle the traces.
 
 
+## Testing
+
+``` bash
+$ composer test
+```
+
 ## Contributing
 
-Please see [CONTRIBUTING](/CONTRIBUTING.md) for details.
-
+Contributions are welcome, [thanks to y'all](https://github.com/appstract/laravel-tracer/graphs/contributors) :)
 
 ## About Appstract
 
 Appstract is a small team from The Netherlands. <3 Laravel, Vue and other awesome tools.
 
+## Buy Us A Beer
 
-## Buy Us a Beer
-
-Would be awesome if you would [buy us a beer](https://www.paypal.me/teamappstract/10)! :)
-
+Would be awesome if you would [buy us a beer](https://www.paypal.me/teamappstract/10)! Or [a lot of beer](https://www.patreon.com/appstract) :)
 
 ## License
 

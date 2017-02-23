@@ -17,7 +17,7 @@ class AssetsMiddleware
     		'</head>',
     		'<link href="/css/laravel-tracer.css" rel="stylesheet">
              <script type="text/javascript" src="/js/laravel-tracer.js"></script>
-             </head>', 
+             </head>',
     		$content
     	);
 

@@ -16,9 +16,9 @@ class TracerServiceProvider extends ServiceProvider
     {
 
         $this->publishes([
-            __DIR__.'/config/tracer.php' => config_path('tracer.php'),
-            __DIR__.'/assets/css/laravel-tracer.css' => public_path('css/laravel-tracer.css'),
-            __DIR__.'/assets/js/laravel-tracer.js' => public_path('js/laravel-tracer.js')
+            __DIR__.'/../config/tracer.php' => config_path('tracer.php'),
+            __DIR__.'/../assets/css/laravel-tracer.css' => public_path('css/laravel-tracer.css'),
+            __DIR__.'/../assets/js/laravel-tracer.js' => public_path('js/laravel-tracer.js')
         ]);
 
         $tracer = (new Tracer)->trace();
