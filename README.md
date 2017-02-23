@@ -45,7 +45,7 @@ Appstract is a small team from The Netherlands. <3 Laravel, Vue and other awesom
 
 ## Buy Us a Beer
 
-Would be awesome if you would [buy us a beer](https://paypal.me/:name)! :)
+Would be awesome if you would [buy us a beer](https://www.paypal.me/teamappstract/10)! :)
 
 
 ## License
