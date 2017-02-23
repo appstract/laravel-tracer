@@ -2,7 +2,6 @@
 
 namespace Appstract\Tracer;
 
-use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
 
 class TracerServiceProvider extends ServiceProvider
@@ -14,11 +13,10 @@ class TracerServiceProvider extends ServiceProvider
      */
     public function boot(\Illuminate\Contracts\Http\Kernel $kernel)
     {
-
         $this->publishes([
             __DIR__.'/../config/tracer.php' => config_path('tracer.php'),
             __DIR__.'/../assets/css/laravel-tracer.css' => public_path('css/laravel-tracer.css'),
-            __DIR__.'/../assets/js/laravel-tracer.js' => public_path('js/laravel-tracer.js')
+            __DIR__.'/../assets/js/laravel-tracer.js' => public_path('js/laravel-tracer.js'),
         ]);
 
         $tracer = (new Tracer)->trace();
