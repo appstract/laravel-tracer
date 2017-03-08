@@ -34,6 +34,7 @@ class TracerServiceProvider extends ServiceProvider
      */
     public function register()
     {
+        $this->mergeConfigFrom(__DIR__.'/../config/tracer.php', 'tracer');
         $this->app->make('Appstract\Tracer\Tracer');
     }
 }
