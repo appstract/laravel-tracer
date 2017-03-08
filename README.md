@@ -16,7 +16,7 @@ Appstract\Tracer\TracerServiceProvider::class,
 
 Publish the config and tracer.js files
 ```sh
-php artisan vendor:publish
+php artisan vendor:publish --provider="Appstract\Tracer\TracerServiceProvider"
 ```
 A tracer.php file will be created in your app/config directory.
 
