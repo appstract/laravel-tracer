@@ -3,7 +3,7 @@
 	border: 4px solid #F4645F;
 }
 
-.laravel-trace.hidden {
+.laravel-trace.hide {
 	display: inline;
 	border: none;
 }
@@ -16,6 +16,6 @@
 	font-size: 12px;
 }
 
-.laravel-trace.hidden p {
+.laravel-trace.hide p {
 	display: none;
 }
