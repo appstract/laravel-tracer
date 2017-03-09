@@ -30,8 +30,7 @@ class Tracer
     public function __construct()
     {
         $this->files = File::allFiles(base_path().(config('tracer.path', '/storage/framework/views')));
-
-        $this->realPath = '<span class="laravel-trace"><?php echo last($this->lastCompiled) ?></span>';
+        $this->realPath = '<span class="laravel-trace"><?php echo str_replace("'.base_path().'", "", last($this->lastCompiled)) ?></span>';
         $this->debug = config('tracer.trace');
     }
 
