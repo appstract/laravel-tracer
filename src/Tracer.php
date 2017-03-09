@@ -30,7 +30,7 @@ class Tracer
     public function __construct()
     {
         $this->files = File::allFiles(base_path().(config('tracer.path', '/storage/framework/views')));
-        $this->realPath = '<span class="laravel-trace"><?php echo str_replace("'.base_path().'", "", last($this->lastCompiled)) ?></span>';
+        $this->realPath = '<span class="laravel-trace"><p><?php echo str_replace("'.base_path().'", "", last($this->lastCompiled)) ?></p>';
         $this->debug = config('tracer.trace');
     }
 
@@ -54,6 +54,7 @@ class Tracer
         // If the file does not contain the trace, add it.
         if (strpos(File::get($file), $this->realPath) === false && $this->debug == true) {
             File::prepend($file, $this->realPath);
+            File::append($file, '</span>');
         }
     }
 
