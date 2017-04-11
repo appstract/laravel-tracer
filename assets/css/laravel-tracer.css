@@ -3,9 +3,13 @@
 	border: 4px solid #F4645F;
 }
 
-.laravel-trace.hide {
+.laravel-trace.no-trace {
 	display: inline;
 	border: none;
+}
+
+.laravel-trace.no-trace .path {
+	display: none;
 }
 
 .laravel-trace .path {
@@ -14,8 +18,4 @@
 	margin: 0;
 	padding: 4px;
 	font-size: 12px;
-}
-
-.laravel-trace.hide p {
-	display: none;
 }

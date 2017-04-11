@@ -4,10 +4,10 @@ document.addEventListener("DOMContentLoaded", function(e) {
         var traces = document.getElementsByClassName('laravel-trace');
 
         for(var i = 0; i < traces.length; i++){
-            if (traces[i].classList.contains('hide')) {
-                traces[i].classList.remove('hide');
+            if (traces[i].classList.contains('no-trace')) {
+                traces[i].classList.remove('no-trace');
             } else {
-                traces[i].classList.add('hide');
+                traces[i].classList.add('no-trace');
             }
         }
     }
