@@ -8,7 +8,7 @@
 	border: none;
 }
 
-.laravel-trace p {
+.laravel-trace .path {
 	background: #F4645F;
 	color: white;
 	margin: 0;
