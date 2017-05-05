@@ -1,4 +1,4 @@
-# Tracer
+# Laravel Tracer
 
 Tracer shows the paths of all the blade files that are loaded into your templates. This could be very convenient for a number of reasons; If you're working on a large project with alot of views/partials. New to a project and want to get a quick overview of the structure of pages. Or if you're completely new to Laravel and want to play around with views/partials/templates etc.
 
@@ -18,6 +18,7 @@ Publish the config and tracer.js files
 ```sh
 php artisan vendor:publish
 ```
+
 A tracer.php file will be created in your app/config directory.
 
 
