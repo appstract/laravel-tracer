@@ -2,6 +2,8 @@
 
 namespace Appstract\Tracer;
 
+use File;
+
 class Tracer
 {
     /**
@@ -27,9 +29,8 @@ class Tracer
      */
     public function __construct()
     {
-        $this->files = \File::allFiles(base_path().(config('tracer.path') ? config('tracer.path') : '/storage/framework/views'));
-
-        $this->realPath = '<span class="laravel-trace"><?php echo last($this->lastCompiled) ?></span>';
+        $this->files = File::allFiles(base_path().(config('tracer.path', '/storage/framework/views')));
+        $this->realPath = '<span class="laravel-trace"><p class="path"><?php echo str_replace("'.base_path().'", "", last($this->lastCompiled)) ?></p>';
         $this->debug = config('tracer.trace');
     }
 
@@ -51,8 +52,9 @@ class Tracer
     public function addTrace($file)
     {
         // If the file does not contain the trace, add it.
-        if (strpos(\File::get($file), $this->realPath) === false && $this->debug == true) {
-            \File::prepend($file, $this->realPath);
+        if (strpos(File::get($file), $this->realPath) === false && $this->debug == true) {
+            File::prepend($file, $this->realPath);
+            File::append($file, '</span>');
         }
     }
 
@@ -64,9 +66,9 @@ class Tracer
     public function removeTrace($file)
     {
         // If the file does contain the trace, remove it.
-        if (strpos(\File::get($file), $this->realPath) !== false) {
-            $content = str_replace($this->realPath, '', \File::get($file));
-            \File::put($file, $content);
+        if (strpos(File::get($file), $this->realPath) !== false) {
+            $content = str_replace($this->realPath, '', File::get($file));
+            File::put($file, $content);
         }
     }
 }

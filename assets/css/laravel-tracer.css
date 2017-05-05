@@ -1,3 +1,21 @@
-.laravel-trace{
+.laravel-trace {
 	display: block;
+	border: 4px solid #F4645F;
+}
+
+.laravel-trace.no-trace {
+	display: inline;
+	border: none;
+}
+
+.laravel-trace.no-trace .path {
+	display: none;
+}
+
+.laravel-trace .path {
+	background: #F4645F;
+	color: white;
+	margin: 0;
+	padding: 4px;
+	font-size: 12px;
 }
