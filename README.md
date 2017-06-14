@@ -10,7 +10,7 @@ Tracer shows the paths of all the Blade files that are loaded into your template
 * New to a project and want to get a quick overview of the structure of pages
 * If you're completely new to Laravel and want to play around with views/partials/templates etc
 
-![Screenshot](screenshot.png?raw=true)
+![Screenshot](_screenshot.png?raw=true)
 
 ## Installation
 
