@@ -1,4 +1,9 @@
-# Tracer
+# Laravel Tracer
+
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/appstract/laravel-tracer.svg?style=flat-square)](https://packagist.org/packages/appstract/laravel-tracer)
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
+[![Total Downloads](https://img.shields.io/packagist/dt/appstract/laravel-tracer.svg?style=flat-square)](https://packagist.org/packages/appstract/laravel-tracer)
+
 
 Tracer shows the paths of all the Blade files that are loaded into your templates. This could be very convenient for a number of reasons:
 * If you're working on a large project with alot of views/partials
@@ -32,7 +37,7 @@ A tracer.php file will be created in your `app/config` directory.
 
 ## Basic usage
 
-In `app/config/tracer.php` file, if trace is set to true you see the paths of all the Blade files that are loaded into your templates. To remove the paths simply set trace to false. If your views are located at another directory you can set the correct path here.
+In `app/config/tracer.php`, if trace is set to true you see the paths of all the Blade files that are loaded into your templates. To remove the paths simply set trace to false. If your views are located at another directory you can set the correct path here.
 
 
 ### Toggle traces
@@ -54,11 +59,7 @@ Contributions are welcome, [thanks to y'all](https://github.com/appstract/larave
 
 ## About Appstract
 
-Appstract is a small team from The Netherlands. <3 Laravel, Vue and other awesome tools.
-
-## Buy us a beer
-
-Would be awesome if you would [buy us a beer](https://www.paypal.me/teamappstract/10)! Or [a lot of beer](https://www.patreon.com/appstract) :)
+Appstract is a small team from The Netherlands. We create (open source) tools for webdevelopment and write about related subjects on [Medium](https://medium.com/appstract). You can [follow us on Twitter](https://twitter.com/teamappstract), [buy us a beer](https://www.paypal.me/teamappstract/10) or [support us on Patreon](https://www.patreon.com/appstract).
 
 ## License
 
