@@ -18,5 +18,12 @@
         "psr-4": {
             "Appstract\\Tracer\\": "src/"
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Appstract\\Tracer\\TracerServiceProvider"
+            ]
+        }
     }
 }
