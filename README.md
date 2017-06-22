@@ -46,6 +46,8 @@ A tracer.js file will be created in your `public/js` directory. This gets inject
 
 Use the keybord shortcut ```ctrl+z ``` inside your app to toggle the traces.
 
+If you wish to disable Tracer and remove the existing traces, you can simply clear the compiled view files using the `php artisan view:clear` command.
+
 
 ## Testing
 
