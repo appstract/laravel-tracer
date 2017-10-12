@@ -2,7 +2,6 @@
 
 namespace Appstract\Tracer;
 
-use Appstract\Tracer\Tracer;
 use Illuminate\Support\ServiceProvider;
 
 class TracerServiceProvider extends ServiceProvider
