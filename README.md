@@ -15,19 +15,13 @@ Tracer shows the paths of all the Blade files that are loaded into your template
 ## Installation
 
 First install this package via Composer:
+
 ```sh
 $ composer require appstract/laravel-tracer --dev
 ```
 
-Then add the following class to your service providers list in `config/app.php` file:
-```php
-'providers' => [
-    // ...
-    Appstract\Tracer\TracerServiceProvider::class,
-];
-```
-
 Publish the config file:
+
 ```sh
 $ php artisan vendor:publish --provider="Appstract\Tracer\TracerServiceProvider"
 ```
